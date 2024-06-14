@@ -1,0 +1,29 @@
+.hero{
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient( rgba(10, 10, 10, 0.966), rgba(10, 10, 10, 0.733)), url(src/Components/Header/Hero/hero-bg.jpg);
+    background-size: cover;
+    background-position: fixed;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text{
+    text-align: center;
+    max-width: 800px;
+}
+
+.hero-text h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.hero-text p{
+    font-size: 30px;
+    max-width: 700px;
+    line-height: 1.4;
+    margin: 20px auto 20px;
+    opacity: 75%;
+}

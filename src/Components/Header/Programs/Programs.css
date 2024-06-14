@@ -1,0 +1,19 @@
+.programs{
+    margin: 80px auto;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.program img{
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    display: inline-flex;
+}
+
+.Program{
+    flex-basis: 31%;
+}
