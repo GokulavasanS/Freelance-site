@@ -30,5 +30,6 @@ export default {
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 =======
-
+# Freelance-site
+Creating a Freelancing website with React+Typescript
 >>>>>>> 71cf9addcfc7085cdf921b5933e7852ebde22918
