@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient( rgba(10, 10, 10, 0.5), rgba(10, 10, 10, 0.5)) ,url(src/Pages/Contact/dfghg.png);
+    background: linear-gradient( rgba(10, 10, 10, 0.5), rgba(10, 10, 10, 0.5)) ,url(src/Pages/Contact/pexels-northwoodsmurphy-1878795.jpg);
     background-position: fixed;
     background-size: cover;
     height: 100vh;
@@ -11,11 +11,86 @@
 
 .contact{
     display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 1200px; /* Set width */
+    height: 700px; /* Set height */
+    background-color: #000000; /* Background color */
+    /*border: 2px solid #FF4A17; /* Border */
+    border-radius: 50px;
+    opacity: 70%;
+    mix-blend-mode: multiply;
+    /*box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); /* Shadow */
+    /* Additional styling */
+}
+
+.content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.type{
+    width: 900px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50px;
+    opacity: 30%;
+    mix-blend-mode: screen;
+    margin-bottom: 20px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
-    opacity: 50%;
-    height: 70vh;
-    width: 70vw;
-    border-radius: 5vh;
+}
+
+.type h1{
+    font-family: montserrat,sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+    transform: translate(-350px,0);
+}
+
+.message{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 900px;
+    height: 250px;
+    opacity: 30%;
+    mix-blend-mode: screen;
+    border-radius: 25px;
+}
+
+.message h1{
+    font-family: montserrat,sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+    transform: translate(40px,20px);
+}
+
+.send{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF4A17;
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+
+.send h1{
+    font-size: 18px;
+    font-family: monserrat,sans-serif;
+    font-weight: 500;
+    color: #000000;
 }
