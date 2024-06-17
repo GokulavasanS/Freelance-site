@@ -13,12 +13,13 @@ import ContactUs from "./Pages/Contact/Contact";
 import ProjectDetail from "./Pages/Portfolio/Details/ProjectDetail";
 import Error from "./Pages/Error"; // Ensure this is a valid component
 import Navbar from "./Components/Header/Navbar/Navbar"; // Import Navbar
+import './Styles/App.css'
 
 const routes: RouteObject[] = [
   {
     path: "/",
     element: (
-      <div>
+      <div className="everything">
         <Navbar />
         <div id="home">
           <Home />
