@@ -1,9 +1,9 @@
 .hero {
     width: 100vw;
-    min-height: 100vh;
-    background: linear-gradient(rgba(10, 10, 10, 0.966), rgba(10, 10, 10, 0.733)), url(src/Components/Header/Hero/hero-bg.jpg);
+    height: 100vh;
+    background: linear-gradient( rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.5)), url(src/Components/Header/Hero/hero-bg.jpg);
     background-size: cover;
-    background-position: fixed;
+    background-position: center;
     color: #fff;
     display: flex;
     align-items: center;
@@ -26,15 +26,52 @@
     line-height: 1.4;
     margin: 20px auto 20px;
     opacity: 75%;
-  }
-  
-  @media (max-width: 768px) {
-    .hero-text h1 {
-      font-size: 40px;
+}
+
+.btn{
+    background: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid #FF4A17;
+    outline: 0;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 500px) {
+    .hero-text{
+        text-align: center;
+        max-width: 300px;
     }
-  
-    .hero-text p {
-      font-size: 20px;
+    
+    .hero-text h1{
+        font-size: 26px;
+        font-weight: 600;
     }
-  }
-  
+    
+    .hero-text p{
+        font-size: 16px;
+        max-width: 600px;
+        line-height: 1.4;
+        margin: 20px auto 20px;
+        opacity: 75%;
+    }
+
+    .btn{
+    background: transparent;
+    color: #fff;
+    padding: 5px 20px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 2px solid #FF4A17;
+    outline: 0;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+}
