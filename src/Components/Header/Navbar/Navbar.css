@@ -1,73 +1,94 @@
-nav{
-    width: 100vw;
-    height: 10vh;
-    background: rgba(0, 0, 0, 0.651);
-    color: #fff;
-    padding: 4px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 10;
-    
+nav {
+  width: 100vw;
+  height: 10vh;
+  color: #fff;
+  padding: 4px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  transition: background-color 0.3s ease;
 }
 
-.logo{
-    width: 140px;   
+
+nav.scrolled {
+  background: hsla(0, 0%, 0%, 0.4); 
+  color: #ffffff; 
 }
 
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 5px 50px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 100%;
-    border-color: #FF4A17;
+.logo {
+  width: 140px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 5px 50px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 ul {
-    list-style: none;
-    gap: 20px;
-    position: relative;
-  }
-  
-  ul li {
-    position: relative;
-    cursor: pointer;
-  }
-  
-  ul li::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: hsl(0, 14%, 92%);
-    transition: width 0.3s ease-in-out;
-  }
-  
-  ul li:hover::after {
-    width: 100%;
-  }
-  
-  .btn {
-    padding: 10px 20px;
-    background-color: #f00;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .active::after {
-    width: 100%;
-  }
-  
-  @media (max-width: 768px) {
-    ul {
+  list-style: none;
+  gap: 20px;
+  position: relative;
+}
+
+ul li {
+  position: relative;
+  cursor: pointer;
+}
+
+ul li::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #FF4A17;
+  transition: width 0.3s;
+}
+
+ul li:not(:has(button)):hover::after {
+  width: 100%;
+  border-radius: 100px;
+}
+
+.active::after {
+  width: 100%;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #FF4A17;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ul li button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+ul li button:hover,
+ul li button:active {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  ul {
       display: none;
-    }
   }
+}

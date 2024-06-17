@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "./GEEKZ.svg";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("");
+  const [scrolled, setScrolled] = useState(false);
 
   const handleScroll = () => {
     const links = document.querySelectorAll("ul li");
@@ -27,6 +29,13 @@ const Navbar = () => {
         }
       }
     });
+
+    // Change background color on scroll
+    if (window.scrollY > 50) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
   };
 
   useEffect(() => {
@@ -37,15 +46,25 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="container">
-      <img src={logo} alt="" className="logo" />
+    <nav className={`container ${scrolled ? "scrolled" : ""}`}>
+      <img src={logo} alt="Logo" className="logo" />
       <ul>
-        <li data-section="#home">Home</li>
-        <li data-section="#About">About Us</li>
-        <li data-section="#portfolio">Portfolio</li>
-        <li data-section="#services">Services</li>
+        <li data-section="#home">
+          <a href="#home">Home</a>
+        </li>
+        <li data-section="#about">
+          <a href="#about">About Us</a>
+        </li>
+        <li data-section="#services">
+          <a href="#services">Services</a>
+        </li>
+        <li data-section="#contactus">
+          <a href="#contactus">Contact Us</a>
+        </li>
         <li>
-          <button className="btn">Contact us</button>
+          <Link to="/portfolio">
+            <button className="btn">Portfolio</button>
+          </Link>
         </li>
       </ul>
     </nav>
