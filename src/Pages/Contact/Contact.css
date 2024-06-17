@@ -1,5 +1,6 @@
 .page{
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     background: url(src/Pages/Contact/svg.svg),linear-gradient( rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)) ,url(src/Pages/Contact/pexels-dariuskrs-2609107.jpg);
@@ -10,10 +11,11 @@
 }
 
 .contact{
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80vw;
+    width: 90vw;
 }
 
 .left{

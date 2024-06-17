@@ -32,7 +32,7 @@ const routes: RouteObject[] = [
         <div id="portfolio">
           <Portfolio />
         </div>
-        <div id="contact">
+        <div id="contactus">
           <ContactUs />
         </div>
       </div>
