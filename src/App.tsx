@@ -8,7 +8,7 @@ function App() {
   return( 
     <>
     <Home />
-    <AboutUs />
+    <AboutUs />yy
     <Contact/>
     </>
   

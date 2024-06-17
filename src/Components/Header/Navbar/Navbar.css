@@ -1,7 +1,7 @@
 nav{
     width: 100vw;
     height: 10vh;
-    background: hsl(0, 2%, 12%);
+    background: rgba(0, 0, 0, 0.651);
     color: #fff;
     padding: 4px 0;
     position: fixed;
@@ -25,7 +25,7 @@ nav ul li{
     font-size: 16px;
     cursor: pointer;
     border-radius: 100%;
-    border-color: #f00;
+    border-color: #FF4A17;
 }
 
 ul {
