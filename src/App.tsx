@@ -9,6 +9,7 @@ import Home from "./Pages/Home/Home";
 import AboutUs from "./Pages/About/AboutUs";
 import Services from "./Pages/ServicePage/Service";
 import Portfolio from "./Pages/Portfolio/Portfolio";
+import ContactUs from "./Pages/Contact/Contact";
 import ProjectDetail from "./Pages/Portfolio/Details/ProjectDetail";
 import Error from "./Pages/Error"; // Ensure this is a valid component
 import Navbar from "./Components/Header/Navbar/Navbar"; // Import Navbar
