@@ -1,8 +1,9 @@
 .page{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url(src/Pages/Contact/svg.svg),linear-gradient( rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)) ,url(src/Pages/Contact/pexels-dariuskrs-2609107.jpg);
+    background: url(src/Pages/Contact/BG_cloud.svg),linear-gradient( rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)) ,url(src/Pages/Contact/pexels-dariuskrs-2609107.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -12,8 +13,8 @@
 .contact{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 80vw;
+    justify-content: center;
+    width: 60vw;
 }
 
 .left{
@@ -23,6 +24,7 @@
     justify-content: center;
     width: 800px;
     height: auto;
+    margin: 0 50px;
 }
 
 .type{
@@ -94,10 +96,11 @@
     justify-content: center;
     align-items: center;
     justify-content: center;
+    margin: 0 50px;
 }
 
 .right img{
-    width: 800px;
+    width: 600px;
     height: auto;
 }
 
@@ -105,10 +108,97 @@
     .right{
         display: none;
     }
+    
 }
 
 @media (max-width: 700px){
     .right{
         display: none;
+    }
+}
+
+@media (max-width: 500px){
+    .right{
+        display: none;
+    }
+
+    .contact{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+    }
+    
+    .left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: auto;
+        margin: 0 10px;
+    }
+    
+    .type{
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        border: 2px solid #FF4A17;
+        border-radius: 20px;
+        width: 300px;
+        height: 45px;
+        margin: 15px 0;
+    }
+    
+    .type h2{
+        font-family: montserrat,sans-serif;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 300;
+        margin-left: 20px;
+        opacity: 60%;
+    }
+    
+    .left h1{
+        font-family: montserrat,sans-serif;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    
+    .message{
+        display: block;
+        align-items: center;
+        background-color: transparent;
+        border: 2px solid #FF4A17;
+        border-radius: 30px;
+        width: 300px;
+        height: 200px;
+        padding-top: 30px;
+        margin: 20px 0;
+    }
+    
+    .message h3{
+        font-family: montserrat,sans-serif;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 300;
+        margin-left: 20px;
+        opacity: 60%;
+    }
+    
+    .submit{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #FF4A17;
+        background-color: transparent;
+        color: #fff;
+        font-family: montserrat,sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        width: 100px;
+        height: 40px;
+        border-radius: 15px;
     }
 }

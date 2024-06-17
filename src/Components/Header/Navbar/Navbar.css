@@ -33,7 +33,7 @@ nav ul li {
 
 ul {
   list-style: none;
-  gap: 20px;
+  padding: 20px;
   position: relative;
 }
 
@@ -87,8 +87,32 @@ ul li button:active {
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1350px) {
+
+  nav{
+    height: 10vh;
+  }
+
   ul {
       display: none;
+  }
+
+  .logo {
+    width: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  nav{
+    height: 7vh;
+  }
+
+  ul {
+      display: none;
+  }
+
+  .logo {
+    width: 90px;
   }
 }

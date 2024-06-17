@@ -19,7 +19,7 @@ const Contact = () => {
           <div className="submit">Submit</div>
         </div>
         <div className="right">
-          <img src='src/Pages/Contact/Untitled-2.svg' alt='SVG'/>
+          <img src='src/Pages/Contact/svg.svg' alt='SVG'/>
         </div>
       </div>
     </div>
