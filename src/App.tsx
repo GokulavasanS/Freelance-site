@@ -1,9 +1,8 @@
-import React from "react";
+//import React from "react";
 import {
   createBrowserRouter,
   RouterProvider,
   RouteObject,
-  Link,
 } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import AboutUs from "./Pages/About/AboutUs";
@@ -13,7 +12,7 @@ import ContactUs from "./Pages/Contact/Contact";
 import ProjectDetail from "./Pages/Portfolio/Details/ProjectDetail";
 import Error from "./Pages/Error"; // Ensure this is a valid component
 import Navbar from "./Components/Header/Navbar/Navbar"; // Import Navbar
-import './Styles/App.css'
+import "./Styles/App.css";
 
 const routes: RouteObject[] = [
   {
