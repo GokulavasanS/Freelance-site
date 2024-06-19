@@ -85,9 +85,18 @@
     font-family: montserrat,sans-serif;
     font-weight: 500;
     font-size: 22px;
-    width: 200px;
+    width: 150px;
     height: 50px;
     border-radius: 30px;
+}
+
+.submit:hover{
+    border: none;
+    background-color: #00BF86;
+    color: #fff;
+    font-weight: 600;
+    transform: scale(1.05) translateY(10px);
+    transition: 0.3s ease;
 }
 
 .right{
@@ -201,4 +210,14 @@
         height: 40px;
         border-radius: 15px;
     }
+
+    .submit:hover{
+        border: none;
+        background-color: #00BF86;
+        color: #fff;
+        font-weight: 600;
+        transform: scale(1.05) translateY(10px);
+        transition: 0.3s ease;
+    }
+    
 }

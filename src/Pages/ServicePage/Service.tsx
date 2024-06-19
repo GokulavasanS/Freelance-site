@@ -2,22 +2,59 @@
 //import React from 'react';
 import './Service.css';
 
-const Services = () => {
+const Service = () => {
   return (
-    <div className="services">
-      <h1 className="services-heading">Our Services</h1>
-      <div className="services-container">
-        {Array.from({ length: 6 }).map((_, index) => (
-          <div key={index} className="service-box">
-            <h2 className="service-title">Service {index + 1}</h2>
-            <p className="service-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
-            </p>
+    <div>
+      <div className="service_page">
+        <h1>OUR SERVICES</h1>
+        <div className="flex">
+          <div className="group">
+            <div className="box">
+              <div className="circle">
+              <img src='src/Pages/ServicePage/Graphic design.svg' alt='icon'/>
+              </div>
+              <h2>Graphic design & Illustration</h2>
+            </div>
+            <div className="box">
+              <div className="circle">
+              <img src='src/Pages/ServicePage/UX & UI design.svg' alt='icon'/>
+              </div>
+              <h2>UX & UI design</h2>
+            </div>
           </div>
-        ))}
+          <div className="group">
+            <div className="box">
+              <div className="circle">
+              <img src='src/Pages/ServicePage/Web development.svg' alt='icon'/>
+              </div>
+              <h2>Web design & web development</h2>
+            </div>
+            <div className="box">
+              <div className="circle">
+              <img src='src/Pages/ServicePage/Web development.svg' alt='icon'/>
+              </div>
+              <h2>Web design & Web development</h2>
+            </div>
+          </div>
+          <div className="group">
+            <div className="box">
+              <div className="circle">
+              <img src='src/Pages/ServicePage/Digital marketing.svg' alt='icon'/>
+              </div>
+              <h2>Digital marketing</h2>
+            </div>
+            <div className="box">
+              <div className="circle">
+              <img src='src/Pages/ServicePage/Graphic design.svg' alt='icon'/>
+              </div>
+              <h2>Graphic design & Illustration</h2>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Services;
+export default Service
+
