@@ -1,0 +1,102 @@
+.page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(src/Pages/Contact/svg.svg),linear-gradient( rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)) ,url(src/Pages/Contact/pexels-dariuskrs-2609107.jpg);
+    background-position: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: auto;
+}
+
+.type{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid #FF4A17;
+    border-radius: 20px;
+    width: 500px;
+    height: 60px;
+    margin: 20px 0;
+}
+
+.type h2{
+    font-family: montserrat,sans-serif;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 20px;
+    opacity: 60%;
+}
+
+.left h1{
+    font-family: montserrat,sans-serif;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.message{
+    display: block;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid #FF4A17;
+    border-radius: 30px;
+    width: 500px;
+    height: 200px;
+    padding-top: 30px;
+    margin: 20px 0;
+}
+
+.message h3{
+    font-family: montserrat,sans-serif;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 20px;
+    opacity: 60%;
+}
+
+.submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #FF4A17;
+    background-color: transparent;
+    color: #fff;
+    font-family: montserrat,sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.right{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.right img{
+    width: 900px;
+    height: auto;
+}
