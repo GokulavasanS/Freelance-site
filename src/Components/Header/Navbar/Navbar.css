@@ -15,7 +15,7 @@ nav {
 
 
 nav.scrolled {
-  background: hsla(0, 0%, 0%, 0.4); 
+  background: linear-gradient(rgb(0, 0, 0, 0.9),rgba(10,10,10,0)); 
   color: #ffffff; 
 }
 

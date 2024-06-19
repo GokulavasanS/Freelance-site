@@ -77,13 +77,21 @@
     font-family: montserrat, sans-serif;
     font-weight: 500;
     font-size: 22px;
-    width: 200px;
+    width: 150px;
     height: 50px;
     border-radius: 30px;
-    margin-top: 20px;
-  }
-  
-  .right {
+}
+
+.submit:hover{
+    border: none;
+    background-color: #00BF86;
+    color: #fff;
+    font-weight: 600;
+    transform: scale(1.05) translateY(10px);
+    transition: 0.3s ease;
+}
+
+.right{
     display: block;
     align-items: center;
     justify-content: center;
@@ -144,5 +152,38 @@
       height: 40px;
       border-radius: 15px;
     }
-  }
-  
+    
+    .message h3{
+        font-family: montserrat,sans-serif;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 300;
+        margin-left: 20px;
+        opacity: 60%;
+    }
+    
+    .submit{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #FF4A17;
+        background-color: transparent;
+        color: #fff;
+        font-family: montserrat,sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        width: 100px;
+        height: 40px;
+        border-radius: 15px;
+    }
+
+    .submit:hover{
+        border: none;
+        background-color: #00BF86;
+        color: #fff;
+        font-weight: 600;
+        transform: scale(1.05) translateY(10px);
+        transition: 0.3s ease;
+    }
+    
+}
