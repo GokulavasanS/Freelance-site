@@ -1,0 +1,110 @@
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.multiply {
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  mix-blend-mode: multiply;
+  opacity: 50%;
+}
+
+.blue {
+  background: linear-gradient(rgb(40, 85, 154), rgba(0, 0, 0, 0));
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  mix-blend-mode: multiply;
+}
+
+.emp {
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  mix-blend-mode: hue;
+}
+
+.layer {
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  top: -5%;
+  left: -5%;
+  background-size: cover;
+  background-position: center;
+  animation: wiggle 10s infinite;
+}
+
+/* Light Theme */
+
+.layer1 {
+  background-image: url(/public/light\ theme/shade-5.svg);
+  animation-delay: 0s;
+}
+
+.layer2 {
+  background-image: url(/public/light\ theme/shade-4.svg);
+  animation-delay: 2s;
+}
+
+.layer3 {
+  background-image: url(/public/light\ theme/shade-3.svg);
+  animation-delay: 4s;
+}
+
+.layer4 {
+  background-image: url(/public/light\ theme/shade-2.svg);
+  animation-delay: 6s;
+}
+
+.layer5 {
+  background-image: url(/public/light\ theme/shade-1.svg);
+  animation-delay: 8s;
+}
+
+/* Dark theme overrides */
+.background-container.dark .layer1 {
+  background-image: url();
+}
+
+.background-container.dark .layer2 {
+  background-image: url();
+}
+
+.background-container.dark .layer3 {
+  background-image: url();
+}
+
+.background-container.dark .layer4 {
+  background-image: url(/public/dark\ theme/shade-2.svg);
+}
+
+.background-container.dark .layer5 {
+  background-image: url(/public/dark\ theme/shade-1.svg);
+}
+
+@keyframes wiggle {
+  0%, 100% {
+      transform: translate(0, 0);
+  }
+  25% {
+      transform: translate(5px, -5px);
+  }
+  50% {
+      transform: translate(-5px, 5px);
+  }
+  75% {
+      transform: translate(8px, 8px);
+  }
+}
