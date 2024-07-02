@@ -4,3 +4,60 @@
     height: 100vh;
     background-color: #1D4076;
 }
+
+.how-content{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    width: 50vw;
+    height: 100vh;
+    /* background-color: #fff; */
+}
+
+.how-content h1{
+    font-family: montserrat, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 200px;
+}
+
+.how-content p{
+    font-family: montserrat, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #fff;
+    opacity: 50%;
+    margin-top: 30px;
+    max-width: 700px;
+    margin-left: 200px;
+}
+
+.vector-1{
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.vector-1 img{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    transform: scale(2);
+}
+
+.vector-2{
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.vector-2 img{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    transform: scale(2);
+}

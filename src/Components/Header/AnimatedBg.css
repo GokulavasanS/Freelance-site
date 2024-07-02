@@ -115,12 +115,12 @@
     background: linear-gradient(#7ED5EA, #28559A);
   }
   25% {
-    background: linear-gradient(45deg,#7ED5EA, #28559A);
-  }
-  50% {
     background: linear-gradient(90deg,#7ED5EA, #28559A);
   }
+  50% {
+    background: linear-gradient(180deg,#7ED5EA, #28559A);
+  }
   75% {
-    background: linear-gradient(135deg,#7ED5EA, #28559A);
+    background: linear-gradient(270deg,#7ED5EA, #28559A);
   }
 }
