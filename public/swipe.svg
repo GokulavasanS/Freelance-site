@@ -11,7 +11,7 @@
       }
 
       .cls-2 {
-        fill: #28559a;
+        fill: #1f1930;
       }
 
       .cls-3 {
@@ -23,6 +23,6 @@
     </clipPath>
   </defs>
   <g class="cls-3">
-    <rect class="cls-2" width="1920" height="1080"/>
+    <ellipse class="cls-2" cx="960" cy="1641" rx="1490" ry="730"/>
   </g>
 </svg>
