@@ -1,59 +1,59 @@
 import React from 'react';
+import gd from './GraphicDesign.svg';
+import uiux from './UX & UI design.svg'
+import dm from './Digital marketing.svg'
+import cw from './GraphicDesign.svg'
+import seo from './Digital marketing.svg'
+import webdev from './Web development.svg'
 import './Service.css';
-import GD from './GraphicDesign.svg';
-import UxUi from './UX & UI design.svg';
-import WebDev from './Web development.svg';
-import DigitalMarketing from './Digital marketing.svg';
 
 const Service = () => {
   return (
-    <div className="service_page">
-      <h1>OUR SERVICES</h1>
-      <div className="flex">
-        <div className="group">
-          <div className="box">
-            <div className="circle">
-              <img src={GD} alt='Graphic design & Illustration' />
+    <div>
+      <div className="service_page">
+        <h1>OUR SERVICES</h1>
+        <div className="flex">
+          <div className="group">
+            <div className="box">
+              <div className="circle">
+              <img src={gd} alt='icon'/>
+              </div>
+              <h2>Graphic design & Illustration</h2>
             </div>
-            <h2>Graphic design & Illustration</h2>
+            <div className="box">
+              <div className="circle">
+              <img src={uiux} alt='icon'/>
+              </div>
+              <h2>UI & UX design</h2>
+            </div>
           </div>
-          <div className="box">
-            <div className="circle">
-              <img src={UxUi} alt='UX & UI design' />
+          <div className="group">
+            <div className="box">
+              <div className="circle">
+              <img src={webdev} alt='icon'/>
+              </div>
+              <h2>Web design & Development</h2>
             </div>
-            <h2>UX & UI design</h2>
+            <div className="box">
+              <div className="circle">
+              <img src={cw} alt='icon'/>
+              </div>
+              <h2>Content Writing</h2>
+            </div>
           </div>
-        </div>
-        <div className="group">
-          <div className="box">
-            <div className="circle">
-              <img src={WebDev} alt='Web design & web development' />
+          <div className="group">
+            <div className="box">
+              <div className="circle">
+              <img src={dm} alt='icon'/>
+              </div>
+              <h2>Digital marketing</h2>
             </div>
-            <h2>Web design & web development</h2>
-          </div>
-        </div>
-        <div className="group">
-          <div className="box">
-            <div className="circle">
-              <img src={DigitalMarketing} alt='Digital marketing' />
+            <div className="box">
+              <div className="circle">
+              <img src={seo} alt='icon'/>
+              </div>
+              <h2>SEO</h2>
             </div>
-            <h2>Digital marketing</h2>
-          </div>
-        </div>
-        <div className="group">
-          <div className="box">
-            <div className="circle">
-              <img src={DigitalMarketing} alt='Digital marketing' />
-            </div>
-            <h2>SEO</h2>
-          </div>
-        </div>
-        <div className="group">
-          <div className="box">
-            <div className="circle">
-              <img src={DigitalMarketing} alt='Digital marketing' />
-            </div>
-            <h2>Content writing</h2>
           </div>
         </div>
       </div>
@@ -61,4 +61,4 @@ const Service = () => {
   )
 }
 
-export default Service;
+export default Service

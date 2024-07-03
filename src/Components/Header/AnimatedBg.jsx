@@ -6,11 +6,8 @@ const AnimatedBg = ({ theme }) => {
     <div className={`background-container ${theme}`}>
       {/* <div className="blue"></div> */}
       {/* <div className="multiply"></div> */}
-      <div className="arrow">SWIPE  DOWN
-      <img src='src/Components/Header/swipearrow.svg'/>
-      </div>
-      <div className="swipe"></div>
       <div className="emp"></div>
+      <div className="transparent"></div>
       <div className="layer layer1"></div>
       <div className="layer layer2"></div>
       <div className="layer layer3"></div>
