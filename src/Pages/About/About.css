@@ -1,35 +1,105 @@
 .about-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: linear-gradient(#7ED5EA, #28559A);
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    padding: 20px;
-    
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #1D4076;
+}
+
+.content {
+  flex: 1;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  /* transform: scale(2); */
+  right: 0;
+  top: 0;
+}
+
+.slide h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-family: montserrat, sans-serif;
+  font-weight: 600;
+  width: 500px;
+  line-height: 2;
+  color: #fff;
+  text-align: left;
+}
+
+.slide p {
+  font-size: 1rem;
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
+  color: #fff;
+  width: 500px;
+  line-height: 2;
+  text-align: left;
+}
+
+.indicators {
+  display: flex;
+  position: relative;
+  bottom: 20px;
+  left: 50px;
+  transform: translateX(-50%);
+  justify-content: center;
+  z-index: 2;
+}
+
+.indicators span {
+  width: 10px;
+  height: 10px;
+  background-color: #1c67e0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.indicators span.active {
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
   .slide {
-    max-width: 600px;
-    animation: fade 1s ease-in-out;
+    flex-direction: column;
+    height: auto;
   }
-  
-  @keyframes fade {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+
+  .image-container {
+    width: 100%;
+    height: auto;
   }
-  
-  .indicators {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+
+  .image-container img {
+    position: static;
+  }
+
+  .content {
+    width: 100%;
+    padding: 10px;
   }
 
   .slide h2 {
@@ -39,10 +109,4 @@
   .slide p {
     font-size: 1rem;
   }
-  
-  @media (max-width: 768px) {
-    .slide {
-      padding: 0 20px;
-    }
-  }
-  
+}
