@@ -4,7 +4,7 @@
 :root{
   --main-color-: #fff;
   --secondary-color-: #2f91c2;
-  --bg-color-: #1d4076;
+  --bg-color-: #1D4076;
   --teritary-color: #6779ee;
 }
 
@@ -13,8 +13,7 @@
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
-  background: url(src/Pages/Contact/BG_cloud.svg),linear-gradient(rgb(40, 85, 154), rgba(7, 41, 236, 0)), url(src/Pages/ServicePage/pexels-dariuskrs-2609107.jpg);
-  background-position: fixed;
+  background: var(--bg-color-);
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -53,9 +52,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   /* background-color: var(--secondary-color-); */
-  width: 450px;
+  width: 350px;
   height: 300px;
   padding: 10% 10%;
 }
@@ -64,16 +63,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
   background-color: var(--bg-color-);
   box-shadow: inset 10px 10px 20px rgba(10, 10, 10, 0.5);
 }
 
 .circle img{
   width: 75px;
-  height: 75px;
+  height: auto;
 }
 
 .box h2{
