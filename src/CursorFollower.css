@@ -1,0 +1,46 @@
+.cursor, .cursor-follower {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: all 0.1s ease;
+    z-index: 10000;
+  }
+  
+  .cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ffffff;
+    background-color: white;
+  }
+  
+  .cursor-follower {.cursor, .cursor-follower {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: all 0.1s ease;
+    z-index: 10000;
+  }
+  
+    
+  .cursor.click, .cursor-follower.click {
+    transform: scale(0.75);
+  }
+  
+  .cursor.hover, .cursor-follower.hover {
+    transform: scale(1.5);
+    background-color: #28559A;
+  }
+  
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ffffff;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .cursor.click, .cursor-follower.click {
+    transform: scale(0.75);
+  }
+  

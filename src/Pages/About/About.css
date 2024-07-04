@@ -1,54 +1,99 @@
 .about-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: linear-gradient(#7ED5EA, #28559A);
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    padding: 20px;
-    
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.content {
+  flex: 1;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  right: 0;
+  top: 0;
+}
+
+.slide h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.slide p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.indicators {
+  display: flex;
+  position: relative;
+  bottom: 20px;
+  left: 50px;
+  transform: translateX(-50%);
+  justify-content: center;
+  z-index: 2;
+}
+
+.indicators span {
+  width: 10px;
+  height: 10px;
+  background-color: #1c67e0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.indicators span.active {
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
   .slide {
-    max-width: 600px;
-    animation: fade 1s ease-in-out;
+    flex-direction: column;
+    height: auto;
   }
-  
-  @keyframes fade {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+
+  .image-container {
+    width: 100%;
+    height: auto;
   }
-  
-  .indicators {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+
+  .image-container img {
+    position: static;
   }
-  
-  .indicators span {
-    display: block;
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    cursor: pointer;
+
+  .content {
+    width: 100%;
+    padding: 10px;
   }
-  
-  .indicators .active {
-    background: #fff;
+
+  .slide h2 {
+    font-size: 1.5rem;
   }
-  
-  @media (max-width: 768px) {
-    .slide {
-      padding: 0 20px;
-    }
+
+  .slide p {
+    font-size: 0.9rem;
   }
-  
+}
