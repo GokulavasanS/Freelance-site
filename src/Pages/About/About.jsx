@@ -4,11 +4,11 @@ import './About.css';
 
 
 const contentItems = [
-  { title: "Our Mission", text: "We aim to provide the best services...",image: "[image]" },
-  { title: "Our Vision", text: "We envision a world where...",image: "./public/how-1.svg" },
-  { title: "Our Values", text: "Integrity, Innovation, and Excellence...",image: "./public/how-1.svg" },
-  { title: "Our Team", text: "We have a diverse team of...",image: "./public/how-1.svg" },
-  { title: "Our Story", text: "Founded in 2021, we have...",image: "./public/how-1.svg" },
+  { title: "Our Mission", text: "We aim to provide the best services..." },
+  { title: "Our Vision", text: "We envision a world where..." },
+  { title: "Our Values", text: "Integrity, Innovation, and Excellence..." },
+  { title: "Our Team", text: "We have a diverse team of..." },
+  { title: "Our Story", text: "Founded in 2021, we have..." },
 ];
 
 const About = () => {
@@ -26,7 +26,6 @@ const About = () => {
       <div className="slide">
         <h2>{contentItems[currentIndex].title}</h2>
         <p>{contentItems[currentIndex].text}</p>
-        <img src={process.env.PUBLIC_URL + contentItems[currentIndex].image} alt={contentItems[currentIndex].title} />
       </div>
       <div className="indicators">
         {contentItems.map((_, index) => (

@@ -96,7 +96,6 @@ nav ul li{
 }
 
 /* For Toggling button  */
-
 [data-theme='dark'] {
     --background-color: black;
     --text-color: white;
