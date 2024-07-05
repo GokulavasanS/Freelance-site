@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import Logo from "./Brandombluelogo.svg";
-import ThemeToggle from "./ThemeToggle";
+import HomeIcon from './Home-Icon.svg';
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -15,8 +14,7 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="small">
         <div className="logo-title">
-          <img src={Logo} alt="Logo" className="image" />
-          <h2 className="title">BRANDOM</h2>
+          <img src={HomeIcon} alt="Home Icon" className="home-icon" />
         </div>
         <ul className="nav-links">
           <li className="home">HOME</li>

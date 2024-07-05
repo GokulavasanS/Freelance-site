@@ -16,10 +16,12 @@
     width: 600px;
   }
   
-  h2 {
-    margin-bottom: 20px;
+  .contact-page h2 {
     font-size: 2rem;
-    text-align: center;
+    color: black;
+    margin-right: 80px;
+    padding:50px;
+
   }
   
   .forms {
