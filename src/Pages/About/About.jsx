@@ -8,22 +8,27 @@ const contentItems = [
     img: "/aboutus.svg" 
   },
   { 
-    title: "1.Initial Discussion", 
+    title: "Initial Discussion", 
     text: "During the first contact, we want to learn your business goals and product vision and collect the information on the most important functionalities. We also answer the first questions and inform you about the predicted project cost. We review the materials you provide and form a team that will conduct the project analysis..", 
     img: "/aboutus.svg" 
   },
   { 
-    title: "2.Scope Conformation", 
+    title: "Scope Conformation", 
     text: "During this stage we would like to establish what the plans were made on the initial discussion and bring together structure to the project so that both we and the client can accept. This includes all the technical functionalities and screen or page by page expectations and a technical document is created so that we can agree upon and start our initial work.", 
     img: "/aboutus.svg" 
   },
   { 
-    title: "4.Development", 
+    title: "BrainStorming", 
+    text: "During this stage we would like to establish what the plans were made on the initial discussion and bring together structure to the project so that both we and the client can accept. This includes all the technical functionalities and screen or page by page expectations and a technical document is created so that we can agree upon and start our initial work.", 
+    img: "/aboutus.svg" 
+  },
+  { 
+    title: "Development", 
     text: "Multiple teams work on different aspects of the project development and serious testing will be undergoing, both from the technical as well as the functional streams. During this stage we would be releasing the software for the customer to be tested as well so as to take feedback and incorporate them to already done or the upcoming tasks.", 
     img: "/aboutus.svg" 
   },
   { 
-    title: "5.UAT and Testing", 
+    title: "UAT and Testing", 
     text: "At this stage we would create the UAT server and deploy the built solution into it for the customer to be tested and simultaneously out technical testing team would be doing rigorous load tests, functionality and technical glit testing just to eliminate any issues prevailing in the system. This process continues until the customer agrees and certifies with confidence that the application is ready to be moved to the next stage.", 
     img: "/aboutus.svg" 
   },

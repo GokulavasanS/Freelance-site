@@ -51,8 +51,12 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
+      <div className="details">
+        <h1>Let's Talk</h1>
+      <h2>Contact Us</h2>
+      <p></p>
+      </div>
       <div className="container">
-        <h2>Contact Us</h2>
         {successMessage && <p className="success-message">{successMessage}</p>}
         {errors.api && <p className="error-message">{errors.api}</p>}
         <div className="forms">

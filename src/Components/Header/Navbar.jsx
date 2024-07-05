@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Logo from "./Brandombluelogo.svg";
-import ThemeToggle from "./ThemeToggle";
+import HomeIcon from './home.svg';
+import Chatbot from './public/Chatbot.svg'
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -13,16 +13,18 @@ const Navbar = () => {
   return (
     <div>
       <nav className="navbar">
-        {/* <div className="logo-title">
-          <img src={Logo} alt="Logo" className="image" />
-          <h2 className="title">BRANDOM</h2>
-        </div> */}
         <ul className="nav-links">
-          <li className="link">HOME</li>
+        <div className="home">
+          <img src={HomeIcon} alt="Home Icon"/>
+        </div>
+          <div className="text">
           <li className="link">HOW WE DO</li>
           <li className="link">SERVICES</li>
           <li className="link">CONTACT US</li>
-          <div className="button">PORTFOLIO</div>
+          </div>
+          <div className="button">
+          <img src={Chatbot} alt="Chatbot Icon"/> 
+          </div>
         </ul>
         {/* <ThemeToggle onThemeChange={handleThemeChange} /> */}
       </nav>

@@ -1,25 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-
-
 .home-container {
-  background-color: #0d00ff;
+  /* background-color: #0d00ff; */
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   overflow: auto;
   display: flex;
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
 }
 
-.home-container img{
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
   display: flex;
-  z-index: 2;
-  width: 150px;
+  justify-content: space-between;
+  /* padding: 10px 20px; */
+  z-index: 10;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 100px;
+  color: #fff;
+}
+
+.home-logo {
+  width: 30px;
   height: auto;
-  margin-top: 20px;
+  margin-right: 5px;
+}
+
+.home-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.date {
+  grid-column-gap: .71rem;
+  grid-row-gap: .71rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px;
+}
+
+.date_column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.date_time {
+  letter-spacing: -.056rem;
+  font-size: 2.86rem;
+  font-weight: 400;
+  line-height:3.33rem;
+}
+
+.date_am-pm {
+  letter-spacing: -.019rem;
+    margin-top: .48rem;
+    font-family: "Intelligent Design Avertacy 1", sans-serif;
+    font-size: .95rem;
+    font-weight: 600;
+    line-height: 1.31rem;
+}
+
+.date_date {
+  letter-spacing: -.019rem;
+    font-family: Intelligent Design Avertacy, sans-serif;
+    font-size: .95rem;
+    font-weight: 400;
+    line-height: 1.19rem;
 }
 
 .content {
@@ -73,4 +135,13 @@
   border-radius: 20px;
   transform: translateY(-10px);
   transition: 0.3s ease;
+}
+
+.line{
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  height: 0.2rem;
+  background-color: #fff;
+  transform: translateY(10vh);
 }
