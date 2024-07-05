@@ -12,7 +12,7 @@ import './App.css'
 const App = () => {
   return (
       <div className='app'>
-        <CursorFollower />
+        {/* <CursorFollower /> */}
         <Navbar />
         <Home />
         <About />

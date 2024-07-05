@@ -13,6 +13,7 @@ const Navbar = () => {
   return (
     <div>
       <nav className="navbar">
+        <div className="small">
         <div className="logo-title">
           <img src={Logo} alt="Logo" className="image" />
           <h2 className="title">BRANDOM</h2>
@@ -22,8 +23,10 @@ const Navbar = () => {
           <li className="about">HOW WE DO</li>
           <li className="services">SERVICES</li>
           <li className="contact">CONTACT US</li>
+          <div className="button">PORTFOLIO</div>
         </ul>
-        <ThemeToggle onThemeChange={handleThemeChange} />
+        {/* <ThemeToggle onThemeChange={handleThemeChange} /> */}
+        </div>
       </nav>
     </div>
   );
