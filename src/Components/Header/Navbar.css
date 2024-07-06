@@ -16,9 +16,9 @@
 
 .nav-links{
     display: flex;
-    background-color: #28559A;
-    width: 750px;
-    border-radius: 3rem;
+    background-color: #1D4076;
+    width: 800px;
+    border-radius: 1.5rem;
     box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.2);
     gap: 0 10px;
 }
@@ -31,11 +31,14 @@
     height: 70px;
     border-radius: 1rem;
     margin-left: 20px;
+    background-color: #1D4076;
+    border: none;
 }
 
 .home:hover{
-    mix-blend-mode: soft-light;
-    transition: 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease 1;
 }
 
 .home img{
@@ -48,13 +51,13 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #1D4076;
+    background-color: #28559A;
     /* border: 0.2rem solid rgba(255, 255, 255, 0.3); */
-    width: 500px;
-    height: 50px;
-    border-radius: 2rem;
-    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
-}
+    width: 700px;
+    height: 90px;
+    border-radius: 1.5rem;
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.3);
+ }
 
 nav ul {
     display: flex;
@@ -85,14 +88,19 @@ nav ul li {
 .button{
     display: flex;
     align-items: center;
-    width: 100px;
+    width: 175px;
     height: 70px;
-    border-radius: 1rem;
-    margin-right: 20px;
+    font-family: montserrat, sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 1rem;
+    gap: 5px;
 }
 
 .button:hover{
-    mix-blend-mode: soft-light;
+    /* mix-blend-mode: soft-light; */
+    color: rgba(255, 255, 255, 0.5);
+    gap: 15px;
     transition: 0.3s ease;
 }
 
