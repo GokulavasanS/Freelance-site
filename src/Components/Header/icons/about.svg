@@ -1,13 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_429_11217)">
-<path d="M4 18C4 15.7908 5.79086 14 8 14H16C18.2091 14 20 15.7908 20 18V18C20 19.1045 19.1046 20 18 20H6C4.89543 20 4 19.1045 4 18V18Z" stroke="#292929" stroke-width="2.5" stroke-linejoin="round"/>
-<circle cx="12" cy="6.99997" r="3" stroke="#292929" stroke-width="2.5"/>
-</g>
-<defs>
-<clipPath id="clip0_429_11217">
-<rect width="24" height="24" fill="white"/>
-</clipPath>
-</defs>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 800">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 0px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke-linejoin: round;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #fff;
+        stroke-width: 83.3px;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-3 {
+        stroke-miterlimit: 133.3;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" width="800" height="800"/>
+    </clipPath>
+  </defs>
+  <g class="cls-4">
+    <g>
+      <path class="cls-2" d="M133.3,600c0-73.6,59.7-133.3,133.3-133.3h266.7c73.6,0,133.3,59.7,133.3,133.3h0c0,36.8-29.8,66.7-66.7,66.7H200c-36.8,0-66.7-29.9-66.7-66.7h0Z"/>
+      <circle class="cls-3" cx="400" cy="233.3" r="100"/>
+    </g>
+  </g>
 </svg>
