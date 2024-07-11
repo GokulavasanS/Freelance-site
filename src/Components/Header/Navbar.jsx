@@ -1,36 +1,38 @@
-import React, { useState } from "react";
-import HomeIcon from './home.svg';
-import Chatbot from './public/Chatbot.svg'
-import "./Navbar.css";
-import Arrow from './public/RightArrow.svg'
+import React, { useState } from 'react';
+import './Navbar.css';
+import Home from './icons/home.svg';
+import About from './icons/about.svg';
+import Services from './icons/service.svg';
+import Portfolio from './icons/portfolio.svg';
+import Contact from './icons/contact.svg';
 
 const Navbar = () => {
-  const [theme, setTheme] = useState('light');
+  const [isOpen, setIsOpen] = useState(false);
 
-  const handleThemeChange = (newTheme) => {
-    setTheme(newTheme);
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
   };
-  
+
+  const handleClick = () => {
+    if (document.querySelector('.header-show')) {
+      toggleNavbar();
+    }
+  };
 
   return (
-    <div>
-      <nav className="navbar">
-        <ul className="nav-links">
-        <div className="home">
-          <img src={HomeIcon} alt="Home Icon"/>
-        </div>
-        <div className="text">
-          <li className="link">HOW WE DO</li>
-          <li className="link">SERVICES</li>
-          <li className="link">CONTACT US</li>
-          <div className="button">
-            Lets talk
-          <img src={Arrow} alt="Arrow"/> 
-          </div>
-          </div>
+    <div className="navbar">
+      <nav className="navmenu">
+        <ul>
+          <li><a href="#home" className={`active ${isOpen ? 'dropdown-active' : ''}`} onClick={handleClick}><img src={Home} className="navicon" alt="Home" /><span>Home</span></a></li>
+          <li><a href="#about" className={`${isOpen ? 'dropdown-active' : ''}`} onClick={handleClick}><img src={About} className="navicon" alt="About" /><span>About</span></a></li>
+          <li><a href="#portfolio" className={`${isOpen ? 'dropdown-active' : ''}`} onClick={handleClick}><img src={Portfolio} className="navicon" alt="Portfolio" /><span>Portfolio</span></a></li>
+          <li><a href="#services" className={`${isOpen ? 'dropdown-active' : ''}`} onClick={handleClick}><img src={Services} className="navicon" alt="Services" /><span>Services</span></a></li>
+          <li><a href="#contact" className={`${isOpen ? 'dropdown-active' : ''}`} onClick={handleClick}><img src={Contact} className="navicon" alt="Contact" /><span>Contact</span></a></li>
         </ul>
-        {/* <ThemeToggle onThemeChange={handleThemeChange} /> */}
       </nav>
+      <div className="header-toggle" onClick={toggleNavbar}>
+        {isOpen ? <i className="bi bi-x"></i> : <i className="bi bi-list"></i>}
+      </div>
     </div>
   );
 };
