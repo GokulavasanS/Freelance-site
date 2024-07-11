@@ -48,14 +48,9 @@ const About = () => {
     <div className="about-page">
       <div className="slide">
         <div className="content">
-          <h2>{contentItems[currentIndex].title}</h2>
-          <p>{contentItems[currentIndex].text}</p>
-        </div>
-        <div className="image-container">
-          <img src={contentItems[currentIndex].img} alt={contentItems[currentIndex].title} />
-        </div>
-      </div>
-      <div className="indicators">
+          <h2 className='head'>{contentItems[currentIndex].title}</h2>
+          <p className='para'>{contentItems[currentIndex].text}</p>
+          <div className="indicators">
         {contentItems.map((_, index) => (
           <span
             key={index}
@@ -63,6 +58,11 @@ const About = () => {
             onClick={() => setCurrentIndex(index)}
           ></span>
         ))}
+      </div>
+        </div>
+        <div className="image-container">
+          <img src={contentItems[currentIndex].img} alt={contentItems[currentIndex].title} />
+        </div>
       </div>
     </div>
   );
