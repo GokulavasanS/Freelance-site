@@ -31,22 +31,25 @@
   align-items: center;
   text-decoration: none;
   color: white;
-  padding: 15px 10px;
-  transition: all 0.3s ease;
+  /* padding: 15px 10px; */
+  transition: all 0.3s ease-in-out;
   border-radius: 2rem;
 }
 
 .navmenu .nav-link.active {
-  background: linear-gradient(90deg,rgba(29, 64, 118,0.5),#28559A);
+  background: #28559A;
   width: 100%;
 }
 
 .navmenu .navicon {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-  /* background-color: aqua; */
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  padding: 12px;
+  /* margin-right: 10px; */
+  background-color: #28559A;
 }
+
 
 .navmenu .nav-text {
   display: none; /* Initially hide text */
